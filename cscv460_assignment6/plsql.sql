@@ -1,0 +1,16 @@
+--1. Write a procedure insertToMovie that inserts a tuple to table Movie.Note that the insertion should not be done if the following condition is violated: No more than four movies in any year.
+--
+--2.Write a procedure insertToCasting that inserts a tuple to table Cast - ing.Note that the insertion should not be done, if either of the fol - lowing conditions is violated,
+--  (a) (15 points) No actor is cast in the same billing order with some other actor in a movie.(For example, ‘ Leonardo DiCaprio ’ has Ordinal 1 in movie ‘ Titanic ’and other actor cannot have the same Ordinal value.) The constraint will not affect tuples already in the table.)
+--  (b) (20 points) No actor can cast in more than three movies in any year
+--
+--3. Add a column RecentDate to table Actor. Then, write a trigger so that every time when an insertion or update occurs to table Casting, the current date, using SYSDATE, should be updated in table Actor for the actor cast in the movie. Below is an example of using SYSDATE to change the RecentDate value for an actor:
+--
+--UPDATE Actor
+--SET RecentDate = SYSDATE
+--WHERE....
+--The text file should be formatted as follows.
+--  Trigger/procedure ?
+--  Question text
+--CREATE
+--  Statements to test the procedure or trigger
